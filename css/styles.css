@@ -463,12 +463,14 @@ a {
     padding: 3rem;
 }
 
-.testimonial__image {
-    position: relative;
+.testimonial .quote {
+    margin: 2rem 0;
+    font-size: 110%;
 }
 
-.testimonial__image > img {
-    width: 100%;
+.testimonial__image {
+    position: relative;
+    margin: 0 3rem;
 }
 
 .testimonial__image > .icon-container {
@@ -478,13 +480,13 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-    .testimonial .quote,
-    .quote__author {
-        font-size: 2.4rem;
+    .testimonial__image {
+        margin: 0;
     }
-
     .testimonial .quote {
-        margin-left: 6rem;
+        margin: 5rem 0 0 6rem;
+        font-size: 120%;
+        line-height: 1.5;
     }
 }
 
@@ -683,7 +685,7 @@ a {
 
 .feature {
     gap: 4rem 2rem;
-    margin: 12rem;
+    margin: 12rem 0;
 }
 
 .feature:first-of-type {
@@ -694,12 +696,44 @@ a {
     margin: 1rem 0;
 }
 
-.feature__image {
-    width: 100%;
+@media screen and (min-width: 768px) {
+    .feature:nth-of-type(even) .feature__content {
+        order: 2;
+    }
+}
+
+/*--------------------*\
+        FOOTER
+\*--------------------*/
+
+.footer {
+    background: #232323;
+}
+
+.contact__heading,
+.location__heading {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.contact__email,
+.location__address {
+    font-size: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
-    .feature:nth-last-of-type(even) .feature__content {
-        order: 2;
+    .grid > div {
+        margin: 0 auto;
+    }
+    .footer .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .social {
+        display: inline-flex;
+        align-items: center;
+        gap: 2rem;
     }
 }
