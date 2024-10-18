@@ -121,6 +121,10 @@ a {
     white-space: nowrap;
 }
 
+.badge--square {
+    border-radius: 5px;
+}
+
 .badge--primary {
     background: var(--color-primary);
     color: #fff;
@@ -179,6 +183,10 @@ a {
 
 .icon--primary {
     fill: var(--color-primary);
+}
+
+.icon--secondary {
+    fill: var(--color-secondary);
 }
 
 .icon-container {
@@ -297,15 +305,17 @@ a {
 
 .plan__name {
     color: #fff;
-    margin: 0;
     font-weight: 500;
     font-size: 3rem;
+    margin-top: 20px;
 }
 
 .plan__description {
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: 1px;
+    line-height: 1.7;
+    margin: 20px 0;
     display: block;
 }
 
