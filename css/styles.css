@@ -243,12 +243,17 @@ a {
 .btn--outline {
     background: #fff;
     color: var(--color-headings);
-    border-radius: 2px solid var(--color-headings);
+    border: 2px solid var(--color-headings);
 }
 
 .btn--outline:hover {
     background: var(--color-headings);
     color: #fff;
+}
+
+.btn--stretched {
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -280,4 +285,40 @@ a {
 .card--secondary .card__header {
     background: var(--color-secondary);
     color: #fff;
+}
+
+.card--secondary .badge--secondary {
+    background: #02cdf1;
+}
+
+/*--------------------*\
+          PLANS
+\*--------------------*/
+
+.plan__name {
+    color: #fff;
+    margin: 0;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.plan__description {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.plan .list__item {
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .plan__name {
+        font-size: 1.4rem;
+    }
+
+    .plan__description {
+        font-size: 1.7rem;
+    }
 }
