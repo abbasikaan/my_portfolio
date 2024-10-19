@@ -203,6 +203,10 @@ a {
     fill: #fff;
 }
 
+.icon--dark {
+    fill: #000;
+}
+
 .icon--secondary {
     fill: var(--color-secondary);
 }
@@ -586,6 +590,11 @@ a {
     word-spacing: 1.5rem;
     border: 2px solid #222;
     padding: 0.5rem 2rem;
+    transition: all 0.5s;
+}
+
+.nav__logo:hover {
+    border-color: #fff;
 }
 
 .nav__list {
@@ -684,6 +693,37 @@ a {
     margin: 0 auto;
 }
 
+/*--------------------*\
+       Skills BLOCK               
+\*--------------------*/
+
+.skills__heading,
+.skills__description {
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+.skills__heading {
+    color: var(--color-headings);
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.skills__description {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.logos {
+    display: block;
+    align-content: center;
+    width: 100%;
+}
+.logos > img {
+    margin: 10px 10px;
+    opacity: 0.8;
+}
 /*--------------------*\
        FEATURES BLOCK
 \*--------------------*/
