@@ -473,17 +473,17 @@ a {
 \*--------------------*/
 
 .testimonial {
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .testimonial .quote {
-    margin: 2rem 0;
+    margin: 3rem 0;
     font-size: 110%;
 }
 
 .testimonial__image {
     position: relative;
-    margin: 0 3rem;
+    margin: 0 1rem;
 }
 
 .testimonial__image > .icon-container {
@@ -554,6 +554,10 @@ a {
 
 .block__heading {
     margin-top: 0;
+}
+
+.block__description {
+    font-size: 2.5rem;
 }
 
 .block--dark {
@@ -747,6 +751,9 @@ a {
 .callout {
     padding: 4rem;
     border-radius: 5px;
+    position: relative;
+    top: 50px;
+    z-index: 1;
 }
 
 .callout--primary {
@@ -767,9 +774,6 @@ a {
 
 .callout__content {
     text-align: center;
-}
-.callout-signup {
-    transform: translateY(5rem);
 }
 
 @media screen and (min-width: 768px) {
