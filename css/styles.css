@@ -456,6 +456,11 @@ a {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+@media screen and (min-width: 768px) {
+    .grid--1x5 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
 
 @media screen and (min-width: 1024px) {
     .grid--1x3 {
@@ -736,6 +741,49 @@ a {
         order: 2;
     }
 }
+/*--------------------*\
+        CALLOUT
+\*--------------------*/
+.callout {
+    padding: 4rem;
+    border-radius: 5px;
+}
+
+.callout--primary {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.callout__heading {
+    color: #fff;
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.callout .btn {
+    justify-self: center;
+    align-self: center;
+}
+
+.callout__content {
+    text-align: center;
+}
+.callout-signup {
+    transform: translateY(5rem);
+}
+
+@media screen and (min-width: 768px) {
+    .callout .grid--1x2 {
+        grid-template-columns: 1fr auto;
+    }
+    .callout__content {
+        text-align: left;
+    }
+    .callout .btn {
+        justify-self: start;
+        margin: 0 2rem;
+    }
+}
 
 /*--------------------*\
         FOOTER
@@ -743,38 +791,62 @@ a {
 
 .footer {
     background: #232323;
+    padding-top: 10rem;
 }
 
-.contact__heading,
-.location__heading {
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 500;
-    text-transform: uppercase;
+.footer__icons {
+    display: inline-flex;
+    gap: 2rem;
 }
-
-.contact__email,
-.location__address {
-    font-size: 1.5rem;
-}
-
-.social__icon {
-    background: #fff;
-    border: none;
+.footer__icons-link {
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
     border-radius: 100%;
 }
 
+.footer__email,
+.footer__phone,
+.footer__location,
+.footer__icons {
+    padding: 1rem;
+    border-bottom: 1px solid #393939;
+}
+
+.footer__heading {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+.footer__copyright {
+    font-size: 2.1rem;
+    color: #fff;
+    opacity: 0.3;
+}
+
+.footer__brand {
+    margin-top: 2rem;
+}
 @media screen and (min-width: 768px) {
-    .grid > div {
-        margin: 0 auto;
+    .footer {
+        font-size: 1.5rem;
     }
-    .footer .grid {
-        grid-template-columns: repeat(3, 1fr);
+    .footer__icons {
+        gap: 6rem;
     }
 
-    .social {
-        display: inline-flex;
-        align-items: center;
-        gap: 2rem;
+    .footer__copyright {
+        font-size: 1.5rem;
+    }
+
+    .footer__heading {
+        font-size: 1.6rem;
+    }
+    .footer__brand {
+        font-size: 2rem;
+        margin-left: 5rem;
     }
 }
