@@ -1,3 +1,5 @@
+@import "./normalize.css";
+
 /*--------------------*\
  #CUSTOM PROPERTY
 \*--------------------*/
@@ -839,6 +841,7 @@ a {
         font-size: 1.5rem;
     }
     .footer__icons {
+        margin-top: 1.5rem;
         gap: 6rem;
     }
 
