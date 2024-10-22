@@ -1,539 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
          primary meta tags
          -->
-        <title>Younos | Front End Developer</title>
-        <meta property="og:title" content="Younos | Front End Developer.">
-        <meta
-            property="og:description"
-            content="This is a Front End Developer personal portfolio website "
-            
-        >
-        <meta property="og:type" content="website">
+    <title>Younos | Front End Developer</title>
+    <meta property="og:title" content="Younos | Front End Developer.">
+    <meta property="og:description" content="This is a Front End Developer personal portfolio website ">
+    <meta property="og:type" content="website">
 
-        <meta name="title" content="Younos | Front End Developer ">
-        <meta
-            name="description"
-            content="This is a personal portfolio html template"
-        >
+    <meta name="title" content="Younos | Front End Developer ">
+    <meta name="description" content="This is a personal portfolio html template">
 
-        <!-- 
+    <!-- 
          - google font links
         -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-            rel="stylesheet"
-        >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 
-        <!-- 
+    <!-- 
          - custom css link
          -->
-        <link rel="stylesheet" href="/css/styles.css">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    </head>
-    <body>
-        <!-- 
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+
+<body>
+    <!-- 
          Header
         -->
-        <header>
-            <nav class="nav collapsible">
-                <a class="nav__logo" href="/">M // Y</a>
-                <svg class="icon icon--white nav__toggler">
-                    <use xlink:href="images/sprite.svg#menu"></use>
-                </svg>
-                <ul class="list nav__list collapsible__content">
-                    <li class="nav__item"><a href="#">Home</a></li>
-                    <li class="nav__item"><a href="#">About</a></li>
-                    <li class="nav__item"><a href="#">Skills</a></li>
-                    <li class="nav__item"><a href="#">Projects</a></li>
-                    <li class="nav__item"><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <nav class="nav collapsible">
+            <a class="nav__logo" href="/">M // Y</a>
+            <svg class="icon icon--white nav__toggler">
+                <use xlink:href="images/sprite.svg#menu"></use>
+            </svg>
+            <ul class="list nav__list collapsible__content">
+                <li class="nav__item"><a href="#">Home</a></li>
+                <li class="nav__item"><a href="#">About</a></li>
+                <li class="nav__item"><a href="#">Skills</a></li>
+                <li class="nav__item"><a href="#">Projects</a></li>
+                <li class="nav__item"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- 
+    <!-- 
          Hero Section
         -->
 
-        <section class="block block--dark block--skewed-left hero">
-            <div class="container grid grid--1x2">
-                <header class="block__header hero__content">
-                    <span>Hello, I'm Younos</span>
-                    <h1 data-aos="zoom-in-up" class="block__heading">
-                        Frontend Developer
-                    </h1>
-                    <p class="hero__tagline">
-                        A developer with a passion for turning ideas into
-                        reality through code.
-                    </p>
+    <section class="block block--dark block--skewed-left hero">
+        <div class="container grid grid--1x2">
+            <header class="block__header hero__content">
+                <span>Hello, I'm Younos</span>
+                <h1 data-aos="zoom-in-up" class="block__heading">
+                    Frontend Developer
+                </h1>
+                <p class="hero__tagline">
+                    A developer with a passion for turning ideas into
+                    reality through code.
+                </p>
 
-                    <a href="" class="btn btn--accent btn--stretched"
-                        >Download cv</a
-                    >
-                </header>
-                <picture data-aos="zoom-out-down">
-                    <source
-                        type="image/webp"
-                        srcset="
+                <a href="" class="btn btn--accent btn--stretched">Download cv</a>
+            </header>
+            <picture data-aos="zoom-out-down">
+                <source type="image/webp" srcset="
                             images/banner.webp    1x,
                             images/banner@2x.webp 2x
-                        " >
+                        ">
 
-                    <source
-                        type="image/png"
-                        srcset="
+                <source type="image/png" srcset="
                             images/banner.png    1x,
                             images/banner@2x.png 2x
-                        " >
+                        ">
 
-                    <img
-                        class="hero__image"
-                        src="/images/banner.png"
-                        alt="portrait"
-                ></picture>
-            </div>
-        </section>
+                <img class="hero__image" src="/images/banner.png" alt="portrait">
+            </picture>
+        </div>
+    </section>
 
-        <!-- 
+    <!-- 
         Skills Section
         -->
-        <section data-aos="zoom-in-up" class="block container skills">
-            <header class="block__header">
-                <h2>Skills.</h2>
-                <p>The Tools &Technologies I've mastered</p>
-            </header>
-            <ul class="list skills__logos">
-                <li>
-                    <img class="icon" src="/images/html.svg" alt="html logo" >
-                </li>
-                <li>
-                    <img class="icon" src="/images/css.svg" alt="css logo" >
-                </li>
-                <li>
-                    <img
-                        class="icon"
-                        src="/images/js.svg"
-                        alt="JavaScript logo"
-                    >
-                </li>
-                <li>
-                    <img
-                        class="icon"
-                        src="/images/typescript.svg"
-                        alt="typescript logo"
-                    >
-                </li>
-                <li>
-                    <img
-                        class="icon"
-                        src="/images/tailwind.svg"
-                        alt="tailwind-css logo"
-                    >
-                </li>
-                <li>
-                    <img
-                        class="icon"
-                        src="/images/react.svg"
-                        alt="react.js logo"
-                    >
-                </li>
-                <li>
-                    <img
-                        class="icon"
-                        src="/images/redux.svg"
-                        alt="redux logo"
-                    >
-                </li>
-                <li>
-                    <img
-                        class="icon"
-                        src="/images/nextjs.svg"
-                        alt="nextJs logo"
-                    >
-                </li>
-                <li>
-                    <img
-                        class="icon"
-                        src="/images/nodejs.svg"
-                        alt="nodeJs logo"
-                    >
-                </li>
-                <li>
-                    <img
-                        class="icon"
-                        src="/images/express.svg"
-                        alt="expressJs logo"
-                    >
-                </li>
-                <li>
-                    <img
-                        class="icon"
-                        src="/images/mongodb.svg"
-                        alt="mongodb logo"
-                    >
-                </li>
-                <li>
-                    <img
-                        class="icon"
-                        src="/images/docker.svg"
-                        alt="docker logo"
-                    >
-                </li>
-                <li>
-                    <img class="icon" src="/images/jest.svg" alt="jest logo" >
-                </li>
-                <li>
-                    <img class="icon" src="/images/git.svg" alt="git logo" >
-                </li>
-                <li>
-                    <img
-                        class="icon"
-                        src="/images/github.svg"
-                        alt="github logo"
-                    >
-                </li>
-            </ul>
-        </section>
+    <section data-aos="zoom-in-up" class="block container skills">
+        <header class="block__header">
+            <h2>Skills.</h2>
+            <p>The Tools &Technologies I've mastered</p>
+        </header>
+        <ul class="list skills__logos">
+            <li>
+                <img class="icon" src="/images/html.svg" alt="html logo">
+            </li>
+            <li>
+                <img class="icon" src="/images/css.svg" alt="css logo">
+            </li>
+            <li>
+                <img class="icon" src="/images/js.svg" alt="JavaScript logo">
+            </li>
+            <li>
+                <img class="icon" src="/images/typescript.svg" alt="typescript logo">
+            </li>
+            <li>
+                <img class="icon" src="/images/tailwind.svg" alt="tailwind-css logo">
+            </li>
+            <li>
+                <img class="icon" src="/images/react.svg" alt="react.js logo">
+            </li>
+            <li>
+                <img class="icon" src="/images/redux.svg" alt="redux logo">
+            </li>
+            <li>
+                <img class="icon" src="/images/nextjs.svg" alt="nextJs logo">
+            </li>
+            <li>
+                <img class="icon" src="/images/nodejs.svg" alt="nodeJs logo">
+            </li>
+            <li>
+                <img class="icon" src="/images/express.svg" alt="expressJs logo">
+            </li>
+            <li>
+                <img class="icon" src="/images/mongodb.svg" alt="mongodb logo">
+            </li>
+            <li>
+                <img class="icon" src="/images/docker.svg" alt="docker logo">
+            </li>
+            <li>
+                <img class="icon" src="/images/jest.svg" alt="jest logo">
+            </li>
+            <li>
+                <img class="icon" src="/images/git.svg" alt="git logo">
+            </li>
+            <li>
+                <img class="icon" src="/images/github.svg" alt="github logo">
+            </li>
+        </ul>
+    </section>
 
-        <!-- 
+    <!-- 
          Cards Section
         -->
-        <section data-aos="fade-up" class="block container block-plans">
-            <div class="grid grid--1x3">
-                <!-- First plan -->
-                <div class="plan">
-                    <div class="card card--secondary">
-                        <div class="card__header">
-                            <span class="icon-container">
-                                <svg class="icon icon--secondary">
-                                    <use
-                                        xlink:href="images/sprite.svg#computer"
-                                    ></use>
-                                </svg>
-                            </span>
-                            <h3 class="plan__name">Social Media</h3>
-                            <span class="plan__description"
-                                >Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Beatae, deleniti!</span
-                            >
-                            <span class="badge badge--secondary badge--square"
-                                >Newbie</span
-                            >
-                        </div>
-                        <div class="card__body">
-                            <ul class="list list--tick">
-                                <li class="list__item">Html</li>
-                                <li class="list__item">CSS</li>
-                                <li class="list__item">JavaScript</li>
-                            </ul>
-                            <button class="btn btn--outline btn--block">
-                                Learn More
-                            </button>
-                        </div>
+    <section data-aos="fade-up" class="block container block-plans">
+        <div class="grid grid--1x3">
+            <!-- First plan -->
+            <div class="plan">
+                <div class="card card--secondary">
+                    <div class="card__header">
+                        <span class="icon-container">
+                            <svg class="icon icon--secondary">
+                                <use xlink:href="images/sprite.svg#computer"></use>
+                            </svg>
+                        </span>
+                        <h3 class="plan__name">Social Media</h3>
+                        <span class="plan__description">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Beatae, deleniti!</span>
+                        <span class="badge badge--secondary badge--square">Newbie</span>
                     </div>
-                </div>
-                <!-- second plan -->
-                <div class="plan">
-                    <div class="card card--primary">
-                        <div class="card__header">
-                            <span class="icon-container">
-                                <svg class="icon icon--secondary">
-                                    <use
-                                        xlink:href="images/sprite.svg#growth"
-                                    ></use>
-                                </svg>
-                            </span>
-                            <h3 class="plan__name">Social Media</h3>
-                            <span class="plan__description"
-                                >Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Beatae, deleniti!</span
-                            >
-                            <span class="badge badge--primary badge--square"
-                                >Newbie</span
-                            >
-                        </div>
-                        <div class="card__body">
-                            <ul class="list list--tick">
-                                <li class="list__item">Html</li>
-                                <li class="list__item">CSS</li>
-                                <li class="list__item">JavaScript</li>
-                            </ul>
-                            <button class="btn btn--outline btn--block">
-                                Learn More
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Third plan -->
-                <div class="plan">
-                    <div class="card card--secondary">
-                        <div class="card__header">
-                            <span class="icon-container">
-                                <svg class="icon icon--secondary">
-                                    <use
-                                        xlink:href="images/sprite.svg#settings"
-                                    ></use>
-                                </svg>
-                            </span>
-                            <h3 class="plan__name">Social Media</h3>
-                            <span class="plan__description"
-                                >Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Beatae, deleniti!</span
-                            >
-                            <span class="badge badge--secondary badge--square"
-                                >Newbie</span
-                            >
-                        </div>
-                        <div class="card__body">
-                            <ul class="list list--tick">
-                                <li class="list__item">Html</li>
-                                <li class="list__item">CSS</li>
-                                <li class="list__item">JavaScript</li>
-                            </ul>
-                            <button class="btn btn--outline btn--block">
-                                Learn More
-                            </button>
-                        </div>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list__item">Html</li>
+                            <li class="list__item">CSS</li>
+                            <li class="list__item">JavaScript</li>
+                        </ul>
+                        <button class="btn btn--outline btn--block">
+                            Learn More
+                        </button>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- 
-         Features Section
-        -->
-        <section class="block container">
-            <header class="block__header">
-                <h2>What You'll Find Here.</h2>
-                <p class="block__description">
-                    This portfolio is a showcase of my journey so far. Here,
-                    you'll discover Projects that demonstrate my technical
-                    skills and creativity
-                </p>
-            </header>
-            <!-- First Article -->
-            <article class="grid grid--1x2 feature">
-                <div data-aos="fade-right" class="feature__content">
-                    <span class="icon-container">
-                        <svg class="icon icon--primary">
-                            <use xlink:href="images/sprite.svg#easy"></use>
-                        </svg>
-                    </span>
-                    <h3 class="feature__heading">Personal Finance App</h3>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Illo sed qui eligendi laborum aut modi.
-                    </p>
-                    <a href="#" class="link-arrow">Live demo</a>
-                </div>
-                <picture data-aos="fade-left">
-                    <source
-                        type="image/webp"
-                        srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
-                    >
-                    <source
-                        type="image/jpg"
-                        srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x"
-                    >
-                    <img
-                        class="feature__image"
-                        src="/images/easy@2x.jpg"
-                        alt=""
-                    >
-                </picture>
-            </article>
-            <!-- Second Article -->
-            <article class="grid grid--1x2 feature">
-                <div data-aos="fade-up" class="feature__content">
-                    <span class="icon-container">
-                        <svg class="icon icon--primary">
-                            <use xlink:href="images/sprite.svg#easy"></use>
-                        </svg>
-                    </span>
-                    <h3 class="feature__heading">Personal Finance App</h3>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Illo sed qui eligendi laborum aut modi.
-                    </p>
-                    <a href="#" class="link-arrow">Live demo</a>
-                </div>
-                <picture>
-                    <source
-                        type="image/webp"
-                        srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
-                    >
-                    <source
-                        type="image/jpg"
-                        srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x"
-                    >
-                    <img
-                        class="feature__image"
-                        src="/images/easy@2x.jpg"
-                        alt=""
-                    >
-                </picture>
-            </article>
-            <!-- Third article -->
-            <article class="grid grid--1x2 feature">
-                <div data-aos="fade-up" class="feature__content">
-                    <span class="icon-container">
-                        <svg class="icon icon--primary">
-                            <use xlink:href="images/sprite.svg#easy"></use>
-                        </svg>
-                    </span>
-                    <h3 class="feature__heading">Personal Finance App</h3>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Illo sed qui eligendi laborum aut modi.
-                    </p>
-                    <a href="#" class="link-arrow">Live demo</a>
-                </div>
-                <picture>
-                    <source
-                        type="image/webp"
-                        srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
-                    >
-                    <source
-                        type="image/jpg"
-                        srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x"
-                    >
-                    <img
-                        class="feature__image"
-                        src="/images/easy@2x.jpg"
-                        alt=""
-                    >
-                </picture>
-            </article>
-        </section>
-
-        <!-- 
-         Testimonial Section
-        -->
-        <section data-aos="zoom-in" class="block">
-            <header class="block__header">
-                <h2>About me.</h2>
-                <p>
-                    Aspiring full-stack developer with a keen interest in
-                    Frontend.
-                </p>
-            </header>
-            <div class="container">
-                <div class="card testimonial">
-                    <div class="grid grid--1x2">
-                        <div class="testimonial__image">
-                            <img
-                                src="images/testimonial.jpg"
-                                alt="A happy, smiling customer"
-                            >
-                            <span class="icon-container icon-container--accent">
-                                <svg class="icon icon--white icon--small">
-                                    <use
-                                        xlink:href="images/sprite.svg#quotes"
-                                    ></use>
-                                </svg>
-                            </span>
-                        </div>
-                        <blockquote class="quote">
-                            <p class="quote__text">
-                                I enjoy solving problems and continuously
-                                learning new technologies to improve my skills.
-                                Feel free to explore my work and reach out—I'm
-                                excited to bring my fresh perspective and
-                                enthusiasm to the world of software development!
-                            </p>
-                            <footer>
-                                <div class="media">
-                                    <div class="media__image">
-                                        <svg
-                                            class="icon icon--primary quote__line"
-                                        >
-                                            <use
-                                                xlink:href="images/sprite.svg#line"
-                                            ></use>
-                                        </svg>
-                                    </div>
-                                    <div class="media__body">
-                                        <h3 class="media__title quote__author">
-                                            Younos
-                                        </h3>
-                                        <p class="quote__organization">
-                                            Front-End Developer
-                                        </p>
-                                    </div>
-                                </div>
-                            </footer>
-                        </blockquote>
+            <!-- second plan -->
+            <div class="plan">
+                <div class="card card--primary">
+                    <div class="card__header">
+                        <span class="icon-container">
+                            <svg class="icon icon--secondary">
+                                <use xlink:href="images/sprite.svg#growth"></use>
+                            </svg>
+                        </span>
+                        <h3 class="plan__name">Social Media</h3>
+                        <span class="plan__description">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Beatae, deleniti!</span>
+                        <span class="badge badge--primary badge--square">Newbie</span>
+                    </div>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list__item">Html</li>
+                            <li class="list__item">CSS</li>
+                            <li class="list__item">JavaScript</li>
+                        </ul>
+                        <button class="btn btn--outline btn--block">
+                            Learn More
+                        </button>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- 
-        Callout section
-        -->
-        <div class="callout callout--primary container">
-            <div class="grid grid--1x2">
-                <div class="callout__content">
-                    <h2 class="callout__heading">Let's Connect!</h2>
-                    <p>
-                        I’d love to hear from you! Feel free to reach out
-                        through any of the following channels
-                    </p>
+            <!-- Third plan -->
+            <div class="plan">
+                <div class="card card--secondary">
+                    <div class="card__header">
+                        <span class="icon-container">
+                            <svg class="icon icon--secondary">
+                                <use xlink:href="images/sprite.svg#settings"></use>
+                            </svg>
+                        </span>
+                        <h3 class="plan__name">Social Media</h3>
+                        <span class="plan__description">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Beatae, deleniti!</span>
+                        <span class="badge badge--secondary badge--square">Newbie</span>
+                    </div>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list__item">Html</li>
+                            <li class="list__item">CSS</li>
+                            <li class="list__item">JavaScript</li>
+                        </ul>
+                        <button class="btn btn--outline btn--block">
+                            Learn More
+                        </button>
+                    </div>
                 </div>
-                <a href="#" class="btn btn--secondary btn--stretched"
-                    >Contact</a
-                >
             </div>
         </div>
+    </section>
 
-        <!-- 
+    <!-- 
+         Features Section
+        -->
+    <section class="block container">
+        <header class="block__header">
+            <h2>What You'll Find Here.</h2>
+            <p class="block__description">
+                This portfolio is a showcase of my journey so far. Here,
+                you'll discover Projects that demonstrate my technical
+                skills and creativity
+            </p>
+        </header>
+        <!-- First Article -->
+        <article class="grid grid--1x2 feature">
+            <div data-aos="fade-right" class="feature__content">
+                <span class="icon-container">
+                    <svg class="icon icon--primary">
+                        <use xlink:href="images/sprite.svg#easy"></use>
+                    </svg>
+                </span>
+                <h3 class="feature__heading">Personal Finance App</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Illo sed qui eligendi laborum aut modi.
+                </p>
+                <a href="#" class="link-arrow">Live demo</a>
+            </div>
+            <picture data-aos="fade-left">
+                <source type="image/webp" srcset="images/easy.webp 1x, images/easy@2x.webp 2x">
+                <source type="image/jpg" srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x">
+                <img class="feature__image" src="/images/easy@2x.jpg" alt="">
+            </picture>
+        </article>
+        <!-- Second Article -->
+        <article class="grid grid--1x2 feature">
+            <div data-aos="fade-up" class="feature__content">
+                <span class="icon-container">
+                    <svg class="icon icon--primary">
+                        <use xlink:href="images/sprite.svg#easy"></use>
+                    </svg>
+                </span>
+                <h3 class="feature__heading">Personal Finance App</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Illo sed qui eligendi laborum aut modi.
+                </p>
+                <a href="#" class="link-arrow">Live demo</a>
+            </div>
+            <picture>
+                <source type="image/webp" srcset="images/easy.webp 1x, images/easy@2x.webp 2x">
+                <source type="image/jpg" srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x">
+                <img class="feature__image" src="/images/easy@2x.jpg" alt="">
+            </picture>
+        </article>
+        <!-- Third article -->
+        <article class="grid grid--1x2 feature">
+            <div data-aos="fade-up" class="feature__content">
+                <span class="icon-container">
+                    <svg class="icon icon--primary">
+                        <use xlink:href="images/sprite.svg#easy"></use>
+                    </svg>
+                </span>
+                <h3 class="feature__heading">Personal Finance App</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Illo sed qui eligendi laborum aut modi.
+                </p>
+                <a href="#" class="link-arrow">Live demo</a>
+            </div>
+            <picture>
+                <source type="image/webp" srcset="images/easy.webp 1x, images/easy@2x.webp 2x">
+                <source type="image/jpg" srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x">
+                <img class="feature__image" src="/images/easy@2x.jpg" alt="">
+            </picture>
+        </article>
+    </section>
+
+    <!-- 
+         Testimonial Section
+        -->
+    <section data-aos="zoom-in" class="block">
+        <header class="block__header">
+            <h2>About me.</h2>
+            <p>
+                Aspiring full-stack developer with a keen interest in
+                Frontend.
+            </p>
+        </header>
+        <div class="container">
+            <div class="card testimonial">
+                <div class="grid grid--1x2">
+                    <div class="testimonial__image">
+                        <img src="images/testimonial.jpg" alt="A happy, smiling customer">
+                        <span class="icon-container icon-container--accent">
+                            <svg class="icon icon--white icon--small">
+                                <use xlink:href="images/sprite.svg#quotes"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <blockquote class="quote">
+                        <p class="quote__text">
+                            I enjoy solving problems and continuously
+                            learning new technologies to improve my skills.
+                            Feel free to explore my work and reach out—I'm
+                            excited to bring my fresh perspective and
+                            enthusiasm to the world of software development!
+                        </p>
+                        <footer>
+                            <div class="media">
+                                <div class="media__image">
+                                    <svg class="icon icon--primary quote__line">
+                                        <use xlink:href="images/sprite.svg#line"></use>
+                                    </svg>
+                                </div>
+                                <div class="media__body">
+                                    <h3 class="media__title quote__author">
+                                        Younos
+                                    </h3>
+                                    <p class="quote__organization">
+                                        Front-End Developer
+                                    </p>
+                                </div>
+                            </div>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 
+        Callout section
+        -->
+    <div class="callout callout--primary container">
+        <div class="grid grid--1x2">
+            <div class="callout__content">
+                <h2 class="callout__heading">Let's Connect!</h2>
+                <p>
+                    I’d love to hear from you! Feel free to reach out
+                    through any of the following channels
+                </p>
+            </div>
+            <a href="#" class="btn btn--secondary btn--stretched">Contact</a>
+        </div>
+    </div>
+
+    <!-- 
          Footer
         -->
 
-        <footer class="block block--dark footer">
-            <div class="container grid grid--1x5 footer__container">
-                <section class="footer__email">
-                    <h3 class="footer__heading">Email</h3>
-                    <p>abbasikaan@gmail.com</p>
-                </section>
-                <section class="footer__phone">
-                    <h3 class="footer__heading">Phone</h3>
-                    <p>+009234567</p>
-                </section>
-                <div class="footer__location">
-                    <h3 class="footer__heading">Location</h3>
-                    <p>Warsaw - Poland</p>
-                </div>
-                <div class="footer__icons">
-                    <a class="footer__icons-link" href="#"
-                        ><img src="/images/linkedin.svg" alt=" linkedin logo"
-                    ></a>
-                    <a class="footer__icons-link" href="#"
-                        ><img src="/images/github.svg" alt="github logo"
-                    ></a>
-                </div>
-                <div class="footer__brand">
-                    <p>Thank you for visiting my portfolio!</p>
-                    <p class="footer__copyright">
-                        Copyright 2024 Muhammad Younos
-                    </p>
-                </div>
+    <footer class="block block--dark footer">
+        <div class="container grid grid--1x5 footer__container">
+            <section class="footer__email">
+                <h3 class="footer__heading">Email</h3>
+                <p>abbasikaan@gmail.com</p>
+            </section>
+            <section class="footer__phone">
+                <h3 class="footer__heading">Phone</h3>
+                <p>+009234567</p>
+            </section>
+            <div class="footer__location">
+                <h3 class="footer__heading">Location</h3>
+                <p>Warsaw - Poland</p>
             </div>
-        </footer>
+            <div class="footer__icons">
+                <a class="footer__icons-link" href="#"><img src="/images/linkedin.svg" alt=" linkedin logo"></a>
+                <a class="footer__icons-link" href="#"><img src="/images/github.svg" alt="github logo"></a>
+            </div>
+            <div class="footer__brand">
+                <p>Thank you for visiting my portfolio!</p>
+                <p class="footer__copyright">
+                    Copyright 2024 Muhammad Younos
+                </p>
+            </div>
+        </div>
+    </footer>
 
-        <!-- 
+    <!-- 
          - custom js link below
        -->
-        <script src="/js/main.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-    </body>
+    <script src="/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
 </html>

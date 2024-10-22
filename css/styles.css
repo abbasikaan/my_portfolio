@@ -193,6 +193,7 @@ a {
     width: 40px;
     height: 40px;
 }
+
 .icon--small {
     width: 30px;
     height: 30px;
@@ -201,6 +202,7 @@ a {
 .icon--primary {
     fill: var(--color-primary);
 }
+
 .icon--white {
     fill: #fff;
 }
@@ -458,6 +460,7 @@ a {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media screen and (min-width: 768px) {
     .grid--1x5 {
         grid-template-columns: repeat(5, 1fr);
@@ -488,7 +491,7 @@ a {
     margin: 0 1rem;
 }
 
-.testimonial__image > .icon-container {
+.testimonial__image>.icon-container {
     position: absolute;
     top: 3rem;
     right: -32px;
@@ -498,6 +501,7 @@ a {
     .testimonial__image {
         margin: 0;
     }
+
     .testimonial .quote {
         margin: 5rem 0 0 6rem;
         font-size: 120%;
@@ -618,12 +622,12 @@ a {
     border-bottom: 2px solid #222;
 }
 
-.nav__item > a {
+.nav__item>a {
     color: #d2d0db;
     transition: color 0.3s;
 }
 
-.nav__item > a:hover {
+.nav__item>a:hover {
     color: #fff;
 }
 
@@ -643,6 +647,7 @@ a {
     .nav__toggler {
         display: none;
     }
+
     .nav__list {
         width: auto;
         display: flex;
@@ -650,6 +655,7 @@ a {
         max-height: 100%;
         opacity: 1;
     }
+
     .nav__item {
         border: 0;
     }
@@ -662,7 +668,8 @@ a {
 .hero {
     clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
-.block__header > span {
+
+.block__header>span {
     color: #b9c3cf;
 }
 
@@ -686,7 +693,8 @@ a {
         text-align: left;
         align-self: center;
     }
-    .block__header > span {
+
+    .block__header>span {
         font-size: 4rem;
     }
 }
@@ -722,6 +730,7 @@ a {
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
 }
+
 /*--------------------*\
        FEATURES BLOCK
 \*--------------------*/
@@ -738,6 +747,7 @@ a {
 .feature__heading {
     margin: 1rem 0;
 }
+
 .feature__image {
     width: 100%;
 }
@@ -747,6 +757,7 @@ a {
         order: 2;
     }
 }
+
 /*--------------------*\
         CALLOUT
 \*--------------------*/
@@ -782,9 +793,11 @@ a {
     .callout .grid--1x2 {
         grid-template-columns: 1fr auto;
     }
+
     .callout__content {
         text-align: left;
     }
+
     .callout .btn {
         justify-self: start;
         margin: 0 2rem;
@@ -804,6 +817,7 @@ a {
     display: inline-flex;
     gap: 2rem;
 }
+
 .footer__icons-link {
     width: 70px;
     height: 70px;
@@ -836,10 +850,12 @@ a {
 .footer__brand {
     margin-top: 2rem;
 }
+
 @media screen and (min-width: 768px) {
     .footer {
         font-size: 1.5rem;
     }
+
     .footer__icons {
         margin-top: 1.5rem;
         gap: 6rem;
@@ -852,6 +868,7 @@ a {
     .footer__heading {
         font-size: 1.6rem;
     }
+
     .footer__brand {
         font-size: 2rem;
         margin-left: 5rem;
